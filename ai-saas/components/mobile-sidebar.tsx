@@ -1,5 +1,5 @@
 "use client";
-import { CircleXIcon, Code2Icon, DoorOpenIcon, ImageIcon, InfinityIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon } from "lucide-react";
+import { CircleXIcon, Code2Icon, ImageIcon, InfinityIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon } from "lucide-react";
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -54,7 +54,12 @@ const routes = [
     },
 ]
 
-const MobileSidebar = ({ isOpen, onClose }) => {
+interface MobileSidebarProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+const MobileSidebar = ({ isOpen, onClose }: MobileSidebarProps) => {
     const pathaname = usePathname();
     return (
         <div className={cn(

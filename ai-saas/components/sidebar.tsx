@@ -1,5 +1,5 @@
 "use client";
-import { Code2Icon, ImageIcon, InfinityIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon, Weight } from "lucide-react";
+import { Code2Icon, ImageIcon, InfinityIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon } from "lucide-react";
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
